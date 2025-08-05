@@ -1,0 +1,82 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #F5F5F5;
+	padding: 20px;
+	min-height: 100vh;
+}
+
+.title {
+	font-size: 28px;
+	font-weight: bold;
+	color: #333333;
+	margin-bottom: 20px;
+}
+
+.picker {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+	font-size: 18px;
+	color: #333333;
+	width: 90%;
+	margin-bottom: 20px;
+}
+
+.selected-unit {
+	color: #007AFF;
+}
+
+.input-field {
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+	font-size: 18px;
+	color: #333333;
+	margin-bottom: 20px;
+	border: none;
+}
+
+.convert-button {
+	width: 100%;
+	background-color: #007AFF;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.convert-button:active {
+	transform: translateY(2px);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-display {
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+	font-size: 18px;
+	color: #333333;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.info-tip {
+	width: 100%;
+	color: #999999;
+	font-size: 14px;
+	text-align: center;
+}
+	

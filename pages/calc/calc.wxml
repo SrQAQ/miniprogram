@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="input-group">
+    <view class="input-label">请选择您的性别</view>
+    <radio-group bindchange="handleGenderChange">
+      <label class="radio-item">
+        <radio value="male" checked="{{gender === 'male'}}" /> 男
+      </label>
+      <label class="radio-item">
+        <radio value="female" checked="{{gender === 'female'}}" /> 女
+      </label>
+    </radio-group>
+    <view class="input-label">请输入您的身高体重</view>
+    <view class="input-item">
+      <icon type="person" size="20"></icon>
+      <input type="number" placeholder="身高/cm" bindinput="handleHeightInput" value="{{height}}"/>
+    </view>
+    <view class="input-item">
+      <icon type="scale" size="20"></icon>
+      <input type="number" placeholder="体重/kg" bindinput="handleWeightInput" value="{{weight}}"/>
+    </view>
+    <button class="calculate-btn" bindtap="calculateBMI">计算</button>
+  </view>
+  <view class="result-group" wx:if="{{showResult}}">
+    <view class="result-label">计算结果</view>
+    <view class="result-item">
+      <view class="result-key">测试结果：</view>
+      <view class="result-value">{{resultMessage}}</view>
+    </view>
+    <view class="result-item">
+      <view class="result-key">理想体重：</view>
+      <view class="result-value">{{idealWeight}}</view>
+    </view>
+    <view class="result-item">
+      <view class="result-key">BMI：</view>
+      <view class="result-value">{{bmi}}</view>
+    </view>
+  </view>
+</view>    

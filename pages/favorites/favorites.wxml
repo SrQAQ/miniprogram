@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="favorite-list">
+        <block wx:for="{{favorites}}" wx:key="id">
+            <view class="favorite-item">
+                <text class="favorite-name" bindtap="onToolTap" data-url="{{item.url}}">{{item.name}}</text>
+                <button bindtap="onCancelCollect" data-id="{{item.id}}" class="cancel-button">取消收藏</button>
+            </view>
+        </block>
+    </view>
+</view>    

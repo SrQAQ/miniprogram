@@ -1,0 +1,14 @@
+<view class="container">
+    <image src="{{imagePath? imagePath : defaultImage}}" mode="aspectFit"></image>
+    <view class="select-container">
+        <picker mode="selector" range="{{formatOptions}}" bindchange="onFormatChange">
+            <view class="picker">
+                选择格式: {{selectedFormat}}
+            </view>
+        </picker>
+    </view>
+    <view class="button-container">
+        <button bindtap="chooseImage">选择图片</button>
+        <button bindtap="saveAndConvertImage">存至相册</button>
+    </view>
+</view>

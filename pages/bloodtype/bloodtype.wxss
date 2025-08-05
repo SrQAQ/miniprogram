@@ -1,0 +1,80 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #F5F5F5;
+	padding: 20px;
+	min-height: 100vh;
+}
+
+.title {
+	font-size: 28px;
+	font-weight: bold;
+	color: #333333;
+	margin-bottom: 20px;
+}
+
+.input-group {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-bottom: 20px;
+}
+
+.picker {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+	font-size: 18px;
+	color: #333333;
+}
+
+.selected-blood {
+	color: #007AFF;
+}
+
+.result {
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #333333;
+}
+
+.result-text {
+	color: #007AFF;
+	font-weight: bold;
+}
+
+.calc-btn {
+	width: 100%;
+	background-color: #007AFF;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-size: 18px;
+	text-align: center;
+}
+
+.calc-btn:active {
+	transform: translateY(2px);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tip {
+	width: 100%;
+	margin-top: 10px;
+	color: #999999;
+	font-size: 14px;
+	text-align: center;
+}
+	

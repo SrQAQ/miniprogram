@@ -1,0 +1,74 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #F5F5F5;
+	padding: 20px;
+}
+
+.header {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.header-title {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333333;
+	text-align: center;
+}
+
+.feedback-textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+	width: 100%;
+	padding: 15px;
+	border: none;
+	font-size: 16px;
+	color: #333333;
+}
+
+textarea::placeholder {
+	color: #999999;
+}
+
+.submit-button {
+	width: 100%;
+	padding: 15px;
+	background-color: #007AFF;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.submit-button:active {
+	transform: translateY(2px);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button text {
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+.tip-message {
+	width: 100%;
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #FEE2E2;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	color: #D92626;
+	font-size: 16px;
+}

@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="process-display">
+    <text>{{process}}</text>
+  </view>
+  <view class="result-display">
+    <text>{{display}}</text>
+  </view>
+  <view class="buttons">
+    <button bindtap="clear" class="button-style operator-button">C</button>
+    <button bindtap="delete" class="button-style operator-button">DEL</button>
+    <button bindtap="setOperator" data-value="/" class="button-style operator-button">/</button>
+    <button bindtap="setOperator" data-value="*" class="button-style operator-button">*</button>
+    <button bindtap="input" data-value="7" class="button-style">7</button>
+    <button bindtap="input" data-value="8" class="button-style">8</button>
+    <button bindtap="input" data-value="9" class="button-style">9</button>
+    <button bindtap="setOperator" data-value="-" class="button-style operator-button">-</button>
+    <button bindtap="input" data-value="4" class="button-style">4</button>
+    <button bindtap="input" data-value="5" class="button-style">5</button>
+    <button bindtap="input" data-value="6" class="button-style">6</button>
+    <button bindtap="setOperator" data-value="+" class="button-style operator-button">+</button>
+    <button bindtap="input" data-value="1" class="button-style">1</button>
+    <button bindtap="input" data-value="2" class="button-style">2</button>
+    <button bindtap="input" data-value="3" class="button-style">3</button>
+    <button bindtap="calculatePress" class="button-style equal-button">=</button>
+    <button bindtap="input" data-value="0" class="button-style zero">0</button>
+    <button bindtap="input" data-value="." class="button-style">.</button>
+  </view>
+</view>
+    

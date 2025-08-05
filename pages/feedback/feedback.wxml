@@ -1,0 +1,14 @@
+<view class="container">
+    <view class="header">
+        <text class="header-title">告诉我们您的想法</text>
+    </view>
+    <view class="feedback-textarea">
+        <textarea placeholder="请输入您的反馈内容" bindinput="onInputChange" value="{{feedbackContent}}" auto-height></textarea>
+    </view>
+    <view class="submit-button" bindtap="submitFeedback">
+        <text>提交反馈</text>
+    </view>
+    <view wx:if="{{showTip}}" class="tip-message">
+        <text>{{tipMessage}}</text>
+    </view>
+</view>

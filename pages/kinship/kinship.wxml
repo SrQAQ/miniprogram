@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="input-container">
+        <input placeholder="请输入或选择亲戚关系" value="{{input}}" bindinput="onInputChange" />
+        <view class="button-group">
+            <button bindtap="addRelationship" data-relationship="父亲">父亲</button>
+            <button bindtap="addRelationship" data-relationship="母亲">母亲</button>
+            <button bindtap="addRelationship" data-relationship="哥哥">哥哥</button>
+            <button bindtap="addRelationship" data-relationship="弟弟">弟弟</button>
+            <button bindtap="addRelationship" data-relationship="姐姐">姐姐</button>
+            <button bindtap="addRelationship" data-relationship="妹妹">妹妹</button>
+            <button bindtap="addRelationship" data-relationship="丈夫">丈夫</button>
+            <button bindtap="addRelationship" data-relationship="妻子">妻子</button>
+            <button bindtap="addRelationship" data-relationship="儿子">儿子</button>
+            <button bindtap="addRelationship" data-relationship="女儿">女儿</button>
+            <button bindtap="deleteLastRelationship">删除最后一项</button>
+            <button bindtap="clearInput">清空</button>
+        </view>
+        <button bindtap="calculateKinship">计算称呼</button>
+    </view>
+    <view class="note-container">
+        <text class="note-text">注：目前仅支持最多两次辈分叠加计算（如：A的B）</text>
+    </view>
+    <view class="result-container" wx:if="{{result}}">
+        <text>称呼：{{result}}</text>
+    </view>
+</view>
+    

@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/calculator/calculator",
+    "pages/converter/converter",
+		"pages/bloodtype/bloodtype",
+		"pages/speedtest/speedtest",
+		"pages/feedback/feedback",
+		"pages/qrcodeGenerator/qrcodeGenerator",
+		"pages/calc/calc",
+		"pages/passwd/passwd",
+		"pages/phone/phone",
+		"pages/tp/tp",
+		"pages/kinship/kinship",
+		"pages/favorites/favorites",
+		"pages/mine/mine",
+		"pages/salary-calculator/salary-calculator"
+  ],
+  "window": {
+    "navigationBarTitleText": "实用工具屋",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#007aff",
+		"backgroundColor": "#ffffff",
+		"list": [
+				{
+						"pagePath": "pages/index/index",
+						"text": "首页"
+				},
+				{
+						"pagePath": "pages/favorites/favorites",
+						"text": "收藏夹"
+				},
+				{
+						"pagePath": "pages/mine/mine",
+						"text": "我的"
+				}
+		]
+}
+}

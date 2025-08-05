@@ -1,0 +1,57 @@
+/* 全局样式 */
+page {
+  background-color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  padding: 20rpx;
+  background-color: #f5f5f5;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.favorite-list {
+  margin-top: 20rpx;
+}
+
+.favorite-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  border: none;
+  border-radius: 10rpx;
+  background-color: #ffffff;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.favorite-item:hover {
+  transform: scale(1.02);
+}
+
+.favorite-name {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333333;
+}
+
+.cancel-button {
+  border: none;
+  border-radius: 25rpx;
+  background-color: #007aff; 
+  color: #ffffff;
+  padding: 10rpx 20rpx;
+  font-size: 24rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+	cursor: pointer;
+	margin-left: 40rpx;
+}
+
+.cancel-button:hover {
+  background-color: #d9363e;
+}
+  

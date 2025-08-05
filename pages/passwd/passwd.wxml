@@ -1,0 +1,49 @@
+<view class="container">
+  <!-- 密码显示区域 -->
+  <view class="password-box">
+    <text class="password-text" selectable>{{password}}</text>
+    <button class="copy-btn" bindtap="copyPassword">
+      点击复制
+    </button>
+  </view>
+
+  <!-- 配置选项 -->
+  <view class="settings">
+    <!-- 密码长度 -->
+    <view class="setting-item">
+      <text class="label">密码长度：</text>
+      <slider 
+        min="6" 
+        max="32" 
+        value="{{length}}" 
+        bindchange="onLengthChange" 
+        activeColor="#409eff"
+      />
+      <text class="value">{{length}}位</text>
+    </view>
+
+    <!-- 复杂度选项 -->
+    <view class="setting-item">
+      <text class="label">包含类型：</text>
+      <checkbox-group bindchange="onComplexityChange">
+        <label class="checkbox">
+          <checkbox value="lower" checked="{{includesLower}}" /> 小写字母
+        </label>
+        <label class="checkbox">
+          <checkbox value="upper" checked="{{includesUpper}}" /> 大写字母
+        </label>
+        <label class="checkbox">
+          <checkbox value="number" checked="{{includesNumber}}" /> 数字
+        </label>
+        <label class="checkbox">
+          <checkbox value="symbol" checked="{{includesSymbol}}" /> 符号（!@#$%^&*）
+        </label>
+      </checkbox-group>
+    </view>
+
+    <!-- 生成按钮 -->
+    <button class="generate-btn" bindtap="generatePassword">
+      生成安全密码
+    </button>
+  </view>
+</view>    

@@ -1,0 +1,6 @@
+<view class="container">
+    <input class="input-field" placeholder="请输入要生成二维码的文本" bindinput="onInputChange" value="{{inputValue}}" />
+    <button class="generate-button" bindtap="generateQRCode">生成二维码</button>
+    <image wx:if="{{qrCodeUrl}}" src="{{qrCodeUrl}}" mode="aspectFit" class="qr-code-image"></image>
+</view>
+    

@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="speed-display">
+    <text class="speed-value">{{speedValue}} kb/s</text>
+  </view>
+  <view class="info-wrapper">
+    <view class="info-item">
+      <text class="label">你的网速为：</text>
+      <text class="value">{{speedMb}} mb/s</text>
+    </view>
+    <view class="info-item">
+      <text class="label">速度相当于：</text>
+      <text class="value">{{equivalentSpeed}}</text>
+    </view>
+    <view class="info-item">
+      <text class="label">手机品牌：</text>
+      <text class="value">{{phoneBrand}}</text>
+    </view>
+    <view class="info-item">
+      <text class="label">手机型号：</text>
+      <text class="value">{{phoneModel}}</text>
+    </view>
+    <view class="info-item">
+      <text class="label">系统版本：</text>
+      <text class="value">{{systemVersion}}</text>
+    </view>
+    <view class="info-item">
+      <text class="label">微信版本：</text>
+      <text class="value">{{wechatVersion}}</text>
+    </view>
+  </view>
+  <view class="tip">请多测试几次较为准确</view>
+  <button class="re-test-btn" bindtap="reTest">重新测速</button>
+</view>    

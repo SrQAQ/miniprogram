@@ -1,0 +1,49 @@
+.container {
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.select-container {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  flex-shrink: 0; /* 防止选择格式区域被压缩 */
+}
+
+.picker {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding: 20px 0;
+  gap: 15px;
+  flex-shrink: 0; /* 防止按钮区域被压缩 */
+}
+
+button {
+  flex: 1;
+  max-width: 150px;
+  padding: 50rpx;
+  border-radius: 5px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+}
+
+image {
+  width: 100%;
+  display: block;
+  min-height: 70vh;
+  max-height: 80vh; /* 设置图片最大高度，避免图片过高影响布局 */
+  object-fit: cover; /* 保持图片比例并覆盖容器 */
+}
+  

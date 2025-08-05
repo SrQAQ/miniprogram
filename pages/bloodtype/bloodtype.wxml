@@ -1,0 +1,19 @@
+<view class="container">
+    <view class="title">血型遗传计算器</view>
+    <view class="input-group">
+        <picker mode="selector" range="{{bloodTypes}}" bindchange="onFatherSelect">
+            <view class="picker">父亲血型：<span class="selected-blood">{{fatherBlood}}</span></view>
+        </picker>
+        <picker mode="selector" range="{{bloodTypes}}" bindchange="onMotherSelect">
+            <view class="picker">母亲血型：<span class="selected-blood">{{motherBlood}}</span></view>
+        </picker>
+    </view>
+    <view class="result">
+        <text>子女可能血型：</text>
+        <text class="result-text">{{resultBlood}}</text>
+    </view>
+    <button class="calc-btn" bindtap="calculate">立即计算</button>
+    <view class="tip" wx:if="{{resultBlood.length > 0}}">以下是计算得出的子女可能的血型结果。</view>
+    <view class="tip" wx:else>还未进行计算，请点击“立即计算”按钮。</view>
+</view>
+    

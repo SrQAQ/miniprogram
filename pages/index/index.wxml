@@ -1,0 +1,16 @@
+<view class="container">
+    <!-- 搜索栏 -->
+    <view class="search-bar">
+        <input placeholder="搜索工具" bindinput="onSearchInput" class="search-input" />
+        <button bindtap="onSearch" class="search-button">搜索</button>
+    </view>
+    <!-- 工具列表 -->
+    <view class="tool-list">
+        <block wx:for="{{filteredTools}}" wx:key="id" wx:for-item="tool" wx:for-index="index">
+            <view class="single-tool">
+                <text class="tool-name" bindtap="onToolTap" data-url="{{tool.url}}">{{tool.name}}</text>
+                <button class="collect-button" bindtap="onCollect" data-id="{{tool.id}}">收藏</button>
+            </view>
+        </block>
+    </view>
+</view>    

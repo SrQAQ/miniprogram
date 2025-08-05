@@ -1,0 +1,60 @@
+<view class="container">
+  <view class="result-card">
+    <view class="result-title">税后所得</view>
+    <view class="result-value">{{afterTax}}</view>
+    <view class="tax-group">
+  <view class="tax-item">
+    <text>个税:</text>
+    <text>{{personalTax}}</text>
+  </view>
+  <view class="social-item">
+    <text>社保:</text>
+    <text>{{socialSecurity}}</text>
+  </view>
+  <view class="fund-item">
+    <text>公积金:</text>
+    <text>{{publicFunds}}</text>
+  </view>
+</view>
+  </view>
+  <view class="input-card">
+    <view class="input-row">
+      <label>税前工资</label>
+      <input type="number" bindinput="handlePreTaxSalaryInput" placeholder="请输入税前工资" />
+    </view>
+    <view class="input-row">
+      <label>缴纳公积金</label>
+      <switch checked bindchange="handlePublicFundsSwitch" />
+      <view class="rate-group">
+        <label>缴纳比率</label>
+        <text>{{publicFundsRate}}%</text>
+      </view>
+    </view>
+    <view class="input-row">
+      <label>缴纳社保</label>
+      <switch checked bindchange="handleSocialSecuritySwitch" />
+    </view>
+    <view class="social-group">
+      <view class="social-row">
+        <label>医疗保险</label>
+        <input type="number" bindinput="handleMedicalInput" placeholder="0" />
+      </view>
+      <view class="social-row">
+        <label>养老保险</label>
+        <input type="number" bindinput="handlePensionInput" placeholder="0" />
+      </view>
+      <view class="social-row">
+        <label>失业保险</label>
+        <input type="number" bindinput="handleUnemploymentInput" placeholder="0" />
+      </view>
+      <view class="social-row">
+        <label>工伤保险</label>
+        <input type="number" bindinput="handleWorkInjuryInput" placeholder="0" />
+      </view>
+      <view class="social-row">
+        <label>生育保险</label>
+        <input type="number" bindinput="handleMaternityInput" placeholder="0" />
+      </view>
+    </view>
+  </view>
+</view>
